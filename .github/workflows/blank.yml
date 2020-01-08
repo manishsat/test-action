@@ -9,8 +9,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, world!
     - uses: manishsat/ado-download-artifact@master
       with:
         buildDefinitionId: ${{ secrets.buildDefinitionId }}
@@ -18,4 +16,4 @@ jobs:
         artifactName: ${{ secrets.artifactName }}
         orgName: ${{ secrets.orgName }}
         projectId:  ${{ secrets.projectId }}
-    - run: ls -lart $GITHUB_WORSPACE/${{ secrets.artifactName }}
+    - run: ls -lart $GITHUB_WORKSPACE/${{ secrets.artifactName }}
