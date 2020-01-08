@@ -18,3 +18,4 @@ jobs:
         artifactName: ${{ secrets.artifactName }}
         orgName: ${{ secrets.orgName }}
         projectId:  ${{ secrets.projectId }}
+    - run: ls -lart $GITHUB_WORSPACE/${{ secrets.artifactName }}
