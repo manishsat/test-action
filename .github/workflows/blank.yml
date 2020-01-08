@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - uses: manishsat/ado-download-artifact@v1
+    - uses: manishsat/ado-download-artifact@master
       with:
         buildDefinitionId: ${{ secrets.buildDefinitionId }}
         pattoken: ${{ secrets.pattoken }}
